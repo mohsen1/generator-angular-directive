@@ -1,6 +1,6 @@
 {
   "name": "generator-angular-directive",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Create simple Bower publishable AngularJS directives",
   "license": "MIT",
   "main": "app/index.js",
@@ -19,7 +19,7 @@
     "yeoman-generator"
   ],
   "dependencies": {
-    "angular-directive-boilerplate": "0.0.6",
+    "angular-directive-boilerplate": "0.0.7",
     "camel-case": "^1.0.2",
     "capitalize": "^0.5.0",
     "chalk": "^0.5.0",
