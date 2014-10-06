@@ -111,6 +111,7 @@ var AngularDirectiveGenerator = yeoman.generators.Base.extend({
           fileString = fileString.replace(/directive.js/g, that.options.name.dashed + '.js');
           fileString = fileString.replace(/directive.css/g, that.options.name.dashed + '.css');
           fileString = fileString.replace(/directive.less/g, that.options.name.dashed + '.less');
+          fileString = fileString.replace(/directive.html/g, that.options.name.dashed + '.html');
           fileString = fileString.replace(/[t|T]he [d|D]irective/g, that.options.name.spaced);
           fileString = fileString.replace(/Mohsen Azimi <mazimi@apigee.com>/g,
             that.options.author.name + ' <' + that.options.author.email + '>');
