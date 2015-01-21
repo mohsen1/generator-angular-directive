@@ -14,8 +14,8 @@ var AngularDirectiveGenerator = yeoman.generators.Base.extend({
     this.sourceRoot(path.join(__dirname, '../node_modules/angular-directive-boilerplate/'));
     this.options = {
       author: {
-        name: this.user.git.username,
-        email: this.user.git.email
+        name: this.user.git.name(),
+        email: this.user.git.email()
       }
     };
   },
