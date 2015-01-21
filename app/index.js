@@ -14,8 +14,8 @@ var AngularDirectiveGenerator = yeoman.generators.Base.extend({
     this.sourceRoot(path.join(__dirname, '../node_modules/angular-directive-boilerplate/'));
     this.options = {
       author: {
-        name: this.user.git.username,
-        email: this.user.git.email
+        name: this.user.git.name(),
+        email: this.user.git.email()
       }
     };
   },
@@ -113,8 +113,8 @@ var AngularDirectiveGenerator = yeoman.generators.Base.extend({
           fileString = fileString.replace(/directive.less/g, that.options.name.dashed + '.less');
           fileString = fileString.replace(/directive.html/g, that.options.name.dashed + '.html');
           fileString = fileString.replace(/[t|T]he [d|D]irective/g, that.options.name.spaced);
-          fileString = fileString.replace(/Mohsen Azimi <mazimi@apigee.com>/g,
-            that.options.author.name + ' <' + that.options.author.email + '>');
+          fileString = fileString.replace(/Mohsen Azimi/g, that.options.author.name);
+          fileString = fileString.replace(/<mazimi@apigee.com>/g,'<' + that.options.author.email + '>');
           fileString = fileString.replace('Angular Publishable Directive Template', '');
 
 
